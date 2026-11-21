@@ -1,0 +1,72 @@
+/* Leonida Trophy Atlas — own look: sunset Vice City palette, no official art. */
+:root{--ink:#1d1420;--muted:#6b5a68;--paper:#fff8ef;--card:#ffffff;--line:#e8d5c4;--pink:#e84393;--teal:#0e7c7b;--gold:#b8860b;--violet:#6c4bd8;--silver:#5b6b7a}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,Palatino,serif;background:var(--paper);color:var(--ink);line-height:1.5}
+.masthead{display:flex;gap:24px;justify-content:space-between;align-items:flex-start;padding:28px 28px 18px;background:linear-gradient(120deg,#2b0f3a,#7a1e5c 55%,#e84393);color:#fff}
+.kicker{margin:0 0 6px;letter-spacing:.18em;font-size:12px;font-family:Arial,sans-serif;color:#ffd166}
+h1{margin:0;font-size:44px;line-height:1.05}
+.sub{max-width:640px;color:#ffe9f3}
+.platinum-card{flex:0 0 260px;background:#fff;color:var(--ink);border-radius:12px;padding:16px;box-shadow:0 6px 24px rgba(0,0,0,.3)}
+.plat-grade{font-family:Arial,sans-serif;font-weight:700;letter-spacing:.14em;color:var(--gold);font-size:12px}
+.plat-name{font-size:20px;font-weight:700;margin:4px 0}
+.plat-desc{color:var(--muted);font-size:14px}
+.plat-progress{margin-top:10px;font-family:Arial,sans-serif;font-weight:700;color:var(--teal)}
+.disclaimer{margin:18px 28px 0;background:#fde8e8;border:2px solid #c8102e;border-left:8px solid #c8102e;border-radius:8px;padding:12px 16px;font-size:15px;font-family:Arial,sans-serif}
+.disclaimer strong{color:#c8102e}
+.honesty,.progress-wrap,.controls,.roadmap,.missable,main,footer{margin:18px 28px}
+.honesty{background:#fff3cd;border:1px solid #e6c87a;border-left:6px solid #b8860b;border-radius:8px;padding:12px 16px;font-size:15px}
+.progress-top{display:flex;gap:18px;flex-wrap:wrap;font-family:Arial,sans-serif;font-weight:700}
+.bar{height:14px;background:#ead9c8;border-radius:999px;overflow:hidden;margin:8px 0}
+.bar-fill{height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--pink));transition:width .3s}
+.progress-sub{color:var(--muted);font-size:14px}
+.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-family:Arial,sans-serif;font-size:14px}
+.controls input[type=search]{padding:7px 10px;border:1px solid #cbb;border-radius:6px;min-width:220px}
+.filter-group{display:flex;gap:6px;flex-wrap:wrap}
+.filter-group button,.controls button,.import-btn{font-family:Arial,sans-serif;font-size:13px;padding:7px 11px;border:1px solid #c9a8b8;border-radius:999px;background:#fff;cursor:pointer}
+.filter-group button.active{background:var(--pink);color:#fff;border-color:var(--pink)}
+.controls button:hover,.import-btn:hover{border-color:var(--pink)}
+.toggle{font-weight:700}
+.views{display:flex;gap:10px;margin:0 28px;font-family:Arial,sans-serif}
+.views a{color:var(--violet);font-weight:700}
+h2{font-size:26px;margin:6px 0}
+.section-note{color:var(--muted);max-width:900px}
+.stages{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.stages li{background:#fff;border:1px solid var(--line);border-top:5px solid var(--teal);border-radius:10px;padding:14px}
+.stages li:nth-child(2){border-top-color:var(--violet)}
+.stages li:nth-child(3){border-top-color:#d98a00}
+.stages li:nth-child(4){border-top-color:var(--pink)}
+.stages li:nth-child(5){border-top-color:#8a2be2}
+.stages li:nth-child(6){border-top-color:var(--gold)}
+.stage-title{font-weight:700;font-size:17px}
+.stage-count{font-family:Arial,sans-serif;font-size:13px;color:var(--teal);font-weight:700}
+.stage-trophies{font-size:14px;color:var(--muted);margin:8px 0 0}
+.missable-list{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.missable-list li{background:#fff0f3;border:1px solid #f0b6c6;border-radius:8px;padding:10px 12px}
+.missable-list .m-name{font-weight:700}
+.missable-list .m-why{font-size:13px;color:var(--muted)}
+.trophy-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer}
+.card.earned{border-color:var(--teal);box-shadow:0 0 0 2px #cdeee9}
+.card.open{border-color:var(--pink)}
+.card-top{display:flex;gap:10px;align-items:flex-start}
+.card input{width:20px;height:20px;margin-top:4px;accent-color:var(--teal);flex:none}
+.card-name{font-size:18px;font-weight:700;line-height:1.25}
+.card-desc{color:var(--muted);font-style:italic;margin:4px 0}
+.badges{display:flex;gap:6px;flex-wrap:wrap;font-family:Arial,sans-serif;font-size:11px;font-weight:700}
+.badge{padding:2px 8px;border-radius:999px;background:#eee;color:#333;text-transform:uppercase;letter-spacing:.04em}
+.badge.platinum{background:#f3e2a9;color:#7a5b00}.badge.gold{background:#ffe08a;color:#7a5b00}.badge.silver{background:#dfe6ec;color:#33475b}.badge.bronze{background:#f0d3b3;color:#7a4a12}
+.badge.missable{background:#c8102e;color:#fff}.badge.kind{background:#e0f2f1;color:#0b5e5d}
+.missable-tag{display:inline-block;background:#c8102e;color:#fff;font-family:Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:999px;margin-bottom:6px}
+.spoiler-tip{font-size:13px;color:var(--muted);font-style:italic;cursor:help}
+.guide{margin-top:10px;border-top:1px dashed var(--line);padding-top:10px;font-size:15px}
+.guide h3{margin:0 0 6px;font-size:13px;font-family:Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--pink)}
+.source{font-size:13px;color:var(--muted);margin-top:8px;font-family:Arial,sans-serif}
+.source strong{color:var(--ink)}
+.hidden-spoiler{color:var(--muted);font-style:italic}
+.empty{background:#fff;border:1px dashed var(--line);border-radius:8px;padding:16px}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
+/* Deep-link shot views: the requested section sits at the top of the page. */
+body.shot-roadmap .masthead,body.shot-roadmap .disclaimer,body.shot-roadmap .honesty,body.shot-roadmap .progress-wrap,body.shot-roadmap .controls,body.shot-roadmap .views,body.shot-roadmap .missable,body.shot-roadmap main{display:none}
+body.shot-missable .masthead,body.shot-missable .disclaimer,body.shot-missable .honesty,body.shot-missable .progress-wrap,body.shot-missable .controls,body.shot-missable .views,body.shot-missable .roadmap,body.shot-missable main{display:none}
+body.shot-detail .honesty,body.shot-detail .progress-wrap,body.shot-detail .roadmap,body.shot-detail .missable{display:none}
+@media (max-width:760px){.masthead{flex-direction:column}.platinum-card{flex:none;width:100%}h1{font-size:34px}.disclaimer,.honesty,.progress-wrap,.controls,.roadmap,.missable,main,footer{margin:14px 14px}.views{margin:0 14px}}

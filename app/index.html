@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Atlas — GTA VI PS5 Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div>
+    <p class="kicker">GRAND THEFT AUTO VI &middot; PLAYSTATION 5 &middot; LEONIDA</p>
+    <h1>Leonida Trophy Atlas</h1>
+    <p class="sub">The complete guide &amp; tracker for all 55 PS5 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze. Names, descriptions and grades are shown exactly as PlayStation publishes them. Every guide is written in our own words and names its source beside it.</p>
+  </div>
+  <div class="platinum-card" id="platinumCard">
+    <div class="plat-grade">PLATINUM</div>
+    <div class="plat-name">Vice Got a Price!</div>
+    <div class="plat-desc">Congratulations! You&rsquo;re a Leonida Legend.</div>
+    <div class="plat-progress" id="platProgress">0 / 54 other trophies</div>
+  </div>
+</header>
+
+<section class="disclaimer" id="disclaimer" role="note">
+  <strong>⚠️ DISCLAIMER:</strong> Grand Theft Auto VI has not released yet. All trophy descriptions are sourced from official PlayStation pre-release trophy listings. All guide text is speculative, written from trophy names only, NOT verified by real gameplay. This is a planning tracker only.
+</section>
+
+<section class="honesty" id="honesty">
+  <strong>Honest note — read first:</strong> GTA VI is unreleased, so no guide here can quote a played-through route. Each guide below is built from the official trophy description and the game&rsquo;s announced systems (Lucia &amp; Jason, Leonida &amp; Vice City, partner play, Combat Focus), and cites its source — the PlayStation official trophy list (as listed by PSNProfiles and Exophase) plus a named guide such as PowerPyx, PSNProfiles or IGN. Treat counts and steps as the plan to check against the cited guide once the game is out, not as played fact. No Rockstar logo, artwork, box art or game screenshots are used anywhere in this guide; the look is our own.
+</section>
+
+<section class="progress-wrap" aria-label="Progress">
+  <div class="progress-top"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span><span id="gradeCounts"></span></div>
+  <div class="bar"><div class="bar-fill" id="barFill"></div></div>
+  <div class="progress-sub" id="progressSub">Tick a trophy to mark it earned. Progress saved locally in your browser (LocalStorage). Clearing browser data will erase your checklist.</div>
+</section>
+
+<section class="controls" aria-label="Controls">
+  <label class="search-label">Search <input id="search" type="search" placeholder="Search name, mission or guide…" autocomplete="off"></label>
+  <div class="filter-group" id="kindFilters" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="active">All 55</button>
+    <button type="button" data-kind="story">Story</button>
+    <button type="button" data-kind="missable">Missable (13)</button>
+    <button type="button" data-kind="collectibles">Collectibles</button>
+    <button type="button" data-kind="activities">Activities</button>
+    <button type="button" data-kind="feats">Feats</button>
+    <button type="button" data-kind="online">Online</button>
+  </div>
+  <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+  <label>Show <select id="earnedFilter"><option value="all">All trophies</option><option value="unearned">Not yet earned</option><option value="earned">Earned only</option></select></label>
+  <label class="toggle" title="Spoiler-safe: hover a hidden story trophy to reveal its name — full details stay hidden until earned."><input id="spoiler" type="checkbox"> Spoiler-safe: hide story names &amp; descriptions until earned</label>
+  <span class="spoiler-tip" title="Spoiler-safe: hover a hidden story trophy to reveal its name — full details stay hidden until earned.">ⓘ Spoiler-safe tip: hover a hidden trophy to reveal its name</span>
+  <button id="exportBtn" type="button" title="Progress saved locally in your browser (LocalStorage). Clearing browser data will erase your checklist.">Export progress</button>
+  <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+  <button id="resetBtn" type="button">Reset</button>
+</section>
+
+<nav class="views" aria-label="Views">
+  <a href="#roadmap" id="navRoadmap">Roadmap to Platinum</a>
+  <a href="#missable" id="navMissable">Missable trophies</a>
+  <a href="#list" id="navList">Full checklist</a>
+</nav>
+
+<section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the Platinum</h2>
+  <p class="section-note">Roadmap is a planning outline based only on trophy text, subject to change after game launch</p>
+  <ol class="stages" id="stages"></ol>
+</section>
+
+<section class="missable" id="missable" aria-label="Missable trophies">
+  <h2>Missable trophies — do these on your first run</h2>
+  <p class="section-note">Flagged from the official descriptions: each one names a single mission or a one-time moment, so it can be passed by if you rush past it. In GTA games most missions can be replayed, but do not rely on that — finish each one when it first appears.</p>
+  <ul class="missable-list" id="missableList"></ul>
+</section>
+
+<main>
+  <h2 id="listHeading">Full checklist — all 55 trophies</h2>
+  <p class="section-note" id="listNote">Click any trophy to open its guide and sources. Official description is quoted as PlayStation publishes it; the guide underneath is our own words.</p>
+  <div class="empty" id="empty" hidden>No trophies match these filters. There are no online trophies in this list — all 55 are earnable solo, offline.</div>
+  <div class="trophy-list" id="list"></div>
+</main>
+
+<footer>
+  <p>Leonida Trophy Atlas — an unofficial fan guide. Not affiliated with Rockstar Games or PlayStation. Trophy names and descriptions are shown as PlayStation publishes them; all guide text is original. Sources are named beside each guide: PlayStation official trophy list (via PSNProfiles / Exophase), PowerPyx trophy guide, PSNProfiles GTA VI trophy guide, IGN GTA 6 guide, and Rockstar Games GTA VI official site and trailers. Works fully offline — no network requests.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
